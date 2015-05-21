@@ -38,7 +38,9 @@ enum Profession: Int {
 
 This, while simple, has the big downside of being error-prone each time a new member is added. There's no way to enforce at compile time that `allProfessions()` actually returns all possible values.
 
+
 ### Introducing EnumIterator
+
 
 I chose to solve this by creating a class - `EnumIterator` that loops through all the members of en enum that conforms to `IterableEnum` by constantly incrementing an integer, and stopping whenever that integer cannot be converted into a member of the `enum` in question. Like this:
 
@@ -77,6 +79,7 @@ EnumIterator<Profession>.iterate() {
 ```
 
 And we get the result we were looking for!
+
 
 ### But, what happens if the Enum is not linear?
 
