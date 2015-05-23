@@ -164,5 +164,6 @@ EnumIterator<Profession>.iterateWithSequenceOverride(Profession.iterationSequenc
 
 That's it! We can now iterate through both linear and non-linear `Int` based `enums` with ease!
 
-**Documented, final implementation:**
-[github.com/JohnSundell/EnumIterator](https://github.com/JohnSundell/EnumIterator)
+**Documented, final implementation, as part of my SwiftKit library:**
+<br/>
+[SwiftKit/EnumIterator on GitHub](https://github.com/JohnSundell/SwiftKit/blob/master/Source/EnumIterator.swift)
